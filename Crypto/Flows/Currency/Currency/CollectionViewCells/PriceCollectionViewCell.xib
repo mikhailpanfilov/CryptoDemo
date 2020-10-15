@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PriceCollectionViewCell" id="gTV-IL-0wX" customClass="PriceCollectionViewCell" customModule="Crypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BeO-ES-icL">
+                        <rect key="frame" x="16" y="10" width="127.5" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mi8-yh-J83" userLabel="Symbol Label">
+                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="MKG-MY-DK0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" name="primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Czj-3c-6vA" userLabel="Name Label">
+                                <rect key="frame" x="0.0" y="22" width="127.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" name="secondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Mi8-yh-J83" firstAttribute="height" secondItem="Czj-3c-6vA" secondAttribute="height" id="Si4-Xd-aZD"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYD-nC-33W">
+                        <rect key="frame" x="223.5" y="32" width="119.5" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                        <color key="textColor" name="primary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-Vh-grb">
+                        <rect key="frame" x="343" y="35" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" name="primary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-tb-i50" customClass="GraphView" customModule="Crypto" customModuleProvider="target">
+                        <rect key="frame" x="153.5" y="13" width="60" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="MmB-ms-oBp"/>
+                            <constraint firstAttribute="height" constant="28" id="Usp-Ya-GbZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="BeO-ES-icL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="7ZG-aw-U3w"/>
+                <constraint firstItem="BeO-ES-icL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="L2a-dh-Ppo"/>
+                <constraint firstItem="AYD-nC-33W" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="LDk-Ag-Tar"/>
+                <constraint firstItem="AYD-nC-33W" firstAttribute="leading" secondItem="8gB-tb-i50" secondAttribute="trailing" constant="10" id="Yfa-GK-35F"/>
+                <constraint firstItem="ndo-Vh-grb" firstAttribute="top" secondItem="AYD-nC-33W" secondAttribute="top" constant="3" id="dGR-56-h9d"/>
+                <constraint firstItem="8gB-tb-i50" firstAttribute="leading" secondItem="BeO-ES-icL" secondAttribute="trailing" constant="10" id="eAt-90-z5t"/>
+                <constraint firstItem="8gB-tb-i50" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="4" id="gjO-2b-TXY"/>
+                <constraint firstAttribute="trailing" secondItem="ndo-Vh-grb" secondAttribute="trailing" constant="16" id="uWX-x0-y3u"/>
+                <constraint firstItem="8gB-tb-i50" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-5" id="ud2-ib-fXa"/>
+                <constraint firstItem="AYD-nC-33W" firstAttribute="trailing" secondItem="ndo-Vh-grb" secondAttribute="leading" id="z20-Pf-iAU"/>
+            </constraints>
+            <connections>
+                <outlet property="graphView" destination="8gB-tb-i50" id="PtT-XR-BT5"/>
+                <outlet property="nameLabel" destination="Czj-3c-6vA" id="X9J-IO-bip"/>
+                <outlet property="priceDecimalLabel" destination="ndo-Vh-grb" id="uau-64-mS5"/>
+                <outlet property="priceLabel" destination="AYD-nC-33W" id="tUm-DI-93G"/>
+                <outlet property="symbolLabel" destination="Mi8-yh-J83" id="UAO-c4-c4d"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.035294119268655777" green="0.035294119268655777" blue="0.047058824449777603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.70980393886566162" green="0.72156864404678345" blue="0.78431373834609985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
