@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="769" src="https://github.com/mikhailpanfilov/CryptoDemo/blob/master/CryptoDemo_header.png">
+  <img width="769" src="https://github.com/mikhailpanfilov/CryptoDemo/blob/main/CryptoDemo_header.png">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 The project is built using **SOLID** principles, **Coordinator**, and **MVP**.
 
 <p align="center">
-  <img width="769" src="https://github.com/mikhailpanfilov/CryptoDemo/blob/master/CryptoDemo_body.png">
+  <img width="769" src="https://github.com/mikhailpanfilov/CryptoDemo/blob/main/CryptoDemo_body.png">
 </p>
 
 ### 🚀 Feedback
